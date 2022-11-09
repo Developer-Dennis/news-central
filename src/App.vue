@@ -1,16 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <Navbar />
+    <Politics />
+    <Business />
+    <Sports />
+    <entartainment />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import Politics from './components/politics.vue'
+import Business from './components/business.vue'
+import Sports from './components/sports.vue';
+import Entartainment from './components/entartainment.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Navbar,
+    Politics,
+    Business,
+    Sports,
+    Entartainment
+}
 }
 </script>
 
@@ -21,6 +35,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 </style>
